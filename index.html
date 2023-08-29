@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+
+    <link rel="stylesheet" href="assets/css/icofont.min.css" />
+
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="https://kit.fontawesome.com/8de71d6583.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/theme-dark.css" />
+    <title>Care Clinic</title>
+    <link rel="icon" type="image/png" href="assets/img/Logo-02.png" />
+  </head>
+  <style>
+    .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:20;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    filter: blur(5px); /* blur effect */
+    z-index: 9999;
+    display: none;
+    
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 10000;
+    display: none;
+    width: 50rem;
+}
+.popup-content {
+width:"1px"
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+  </style>
+
+  <body>
+    <div class="header-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-9 col-lg-9">
+            <div class="header-top-item">
+              <div class="header-top-left">
+                <ul>
+                  <li>
+                    <a href="tel:+91 7822816098">
+                      <i class="icofont-ui-call"></i>
+                      Call : +91 7822816098
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                    href="mailto:drprasadbiware@gmail.com"
+                    >
+                      <i class="icofont-ui-message"></i>
+                      <span
+                        >drprasadbiware@gmail.com</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <i class="icofont-location-pin"></i> Care Clinic, Audhut
+                    Heights, Sinhagad road Pune .
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="header-top-item">
+              <div class="header-top-right">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=100095468146433" target="_blank">
+                      <i class="icofont-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/drprasadbiware/" target="_blank">
+                      <i class="icofont-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="whatsapp://send?phone=+917822816098&text=Hello%20from%20my%20website!" target="_blank">
+                      <i class="icofont-whatsapp"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-area sticky-top">
+      <div class="mobile-nav">
+        <a href="index.html" class="logo">
+          <img src="assets/img/Logo-02.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="main-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/Logo-02.png" alt="Logo" />
+            </a>
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blogs.html" class="nav-link">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+              </ul>
+              <div class="appointment md:hidden lg:block">
+                <a href="#" id="open-popup-btns" class="btn btn-info" style="background-color: white;position: absolute;color: black; ;bottom:35px; font-weight: 500;filter:  drop-shadow(0 25px 25px rgb(0 0 0 / 0.15)); ">Appointment</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+      <!------------------------Appointment--------------------------------------->
+<div class="flex items-center gap-6">
+  <div>
+      <div id="popups" class="popup">
+        <div class="container-fluid p-0">
+          <div class="appointment-item">
+            <i id="close-popup-btns" class="fa-solid fa-x" style="position: absolute; top:10px; right: 15px; font-size: 20px; cursor: pointer;" id="myModal" class="close-popup"
+            ></i>
+            <center><h2>Book your appointment</h2></center>
+            <br>
+            <div class="appointment-form">
+              <form id="myForm"
+              id="bookingForm"
+              novalidate  method="POST" onsubmit="sendEmail()">
+                <div class="row">
+                    <div class="form-group">
+                      <i class="icofont-business-man-alt-1"></i>
+                      <label>Name</label>
+                      <input
+                        type="text"
+                        id="name" name="bookingname"  autocomplete="off"
+                        class="form-control"
+                        placeholder="Enter Your Name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <i class="icofont-ui-message"></i>
+                      <label>Email</label>
+                      <input
+                        type="email"
+                        name="bookingemail" class="form-control" autocomplete="off"
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <i class="icofont-ui-call"></i>
+                      <label>Phone</label>
+                      <input
+                        type="text"
+                        id="phone" name="bookingphone" class="form-control" autocomplete="off"
+                        placeholder="Enter Your Number"
+                      />
+                    </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" id="submitBtn"  class="btn appointment-btn">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+          </div>
+          </div>
+      </div>
+  <div id="overlays" class="overlay w-full "></div>
+  <script>
+    const openPopupBtns = document.getElementById('open-popup-btns');
+    const closePopupBtns = document.getElementById('close-popup-btns');
+    const popups = document.getElementById('popups');
+    const overlays = document.getElementById('overlays');
+    openPopupBtns.addEventListener('click', () => {
+        popups.style.display = 'block';
+        overlays.style.display = 'block';
+    });
+    closePopupBtns.addEventListener('click', () => {
+        popups.style.display = 'none';
+        overlays.style.display = 'none';
+    });
+const closePopupButtons = document.querySelectorAll('.close-popup');
+const contactFormPopup = document.getElementById('contact-form-popup');
+closePopupButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        contactFormPopup.style.display = 'none'; 
+    });
+});
+contactFormPopup.addEventListener('click', (event) => {
+    if (event.target === contactFormPopup) {
+        contactFormPopup.style.display = 'none';
+    }
+});
+</script>
+<script>
+  document.getElementById("submitBtn").addEventListener("click", function(event) {
+                event.preventDefault();
+
+                var nameInput = document.getElementById("name");
+                var phoneInput = document.getElementById("phone");
+                var name = nameInput.value.trim();
+                var phone = phoneInput.value.trim();
+        if (name === "") {
+        alert("Please enter your name.");
+        nameInput.focus();
+        return;
+        }
+var phoneRegex = /^[6-9]\d{9}$/; 
+if (!phoneRegex.test(phone)) {
+alert("Please enter a valid 10-digit phone number starting with 6, 7, 8, or 9.");
+phoneInput.focus();
+return;
+}
+alert("Your form is Submit Successfully");
+document.getElementById("myForm").reset();
+});
+</script>
+<!----------------------------End---------------------------------------------->
+
+    <div class="home-slider home-slider-two owl-theme owl-carousel">
+      <div class="slider-item slider-item-img-two">
+        <div class="d-table">
+          <div class="d-table-cell">
+            <div class="container">
+              <div class="slider-text">
+                <div class="slider-shape">
+                  <img src="assets/img/home-one/5.png" alt="Shape" />
+                </div>
+                <h1 class="head1 text-black">
+                  Your Health Hub: Comprehensive Care Under One Roof
+                </h1>
+                <p>
+                  Your one-stop destination for multi-specialty healthcare
+                  services. Our expert doctors are here to provide comprehensive
+                  care and support for all your medical needs.
+                </p>
+                <div class="common-btn">
+                  <a href="./contact.html">Get Appointment</a>
+                  <a class="cmn-btn-right" href="./services.html">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="emergency-area">
+      <div class="container">
+        <div class="row emergency-bg">
+          <div class="col-sm-6 col-lg-4">
+            <div class="emergency-item">
+              <a href="tel:+91 7822816098"><i class="icofont-ui-call"></i></a>
+
+              <div class="emergency-inner">
+                <h3>Emergency Call</h3>
+                <a href="tel:+917822816098"><p>+917822816098</p></a>
+                <a href="tel:02068138888"><p>+02068138888</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="emergency-item">
+              <i class="icofont-location-pin"></i>
+              <div class="emergency-inner">
+                <h3>Location</h3>
+                <p>
+                <big><strong>Care Clinic:</big></strong> Audhut Heights, Opposite Santosh hall, Sinhagad
+                  road, Pune 411051. <br> <br>
+                <big><strong>Manipal Hospital :</strong></big>   Survey No. 111/111, Mahalunge Road, Baner, Pune- 411045.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="emergency-item">
+              <i class="icofont-clock-time"></i>
+              <div class="emergency-inner">
+                <h3>Opening timing</h3>
+                <p>
+                <strong><big> Care Clinic:<br></big></strong> 
+                  Tue/Thu/Sat - 1 pm - 3 pm <br>
+                <strong><big>Manipal Hospital: </big></strong> Baner  <br>
+              Tue/Wed/Thu/Sat - 9am-1pm & 5pm-8pm <br>
+            Mon/Fri - 9am-11am & 2pm-4 pm                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="welcome-area ptb-100">
+      <div class="container-fluid p-0">
+        <div class="row m-0">
+          <div class="col-lg-6 p-0">
+            <div class="welcome-item welcome-left">
+              <a href="https://www.youtube.com/watch?v=bytAtvQo5CM" target="_blank">
+                <i class="youtube fa-brands fa-youtube position-relative top-50 mt-10  text-black p-5" style="font-size: 5rem;"><p style="font-size: 1rem;margin-bottom: 100px;">Watch Now</p></i>
+              </a>
+              
+              <img src="assets/img/DR. Prasad-01-01.jpg" style="z-index: 40;opacity: 0.25;" alt="image" />
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <div class="welcome-item welcome-right">
+              <div class="section-title-two">
+                <span>About Us</span>
+                <h2 style="margin-left: 10px; font-family:Georgia, 'Times New Roman', Times, serif ; font-size:34px;">Welcome to our Clinical Care</h2>
+              </div>
+              <p style="margin-top: -30px; text-align: justify; text-justify: inter-word">
+                Care Clinic is a well-known and reputed physician working in the field of Internal 
+                Medicine since 2003. He successfully established and operated a 100-bed Shatayushi 
+                Hospital with 10 bed ICU, the first well-equipped hospital to have provided modern
+                -day health facilities to the people of Majalgaon taluka in Beed district. Apart 
+                from just walk-in health facilities he also conducted helpful and initiatives like 
+                a monthly 'Diabetic Club' providing diabetic patients regular health care, and check
+                -ups, with over 5,000 beneficiaries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="speciality-area pb-100">
+      <div class="container-fluid p-0">
+        <div class="row m-0">
+          <div class="col-lg-7">
+            <div class="speciality-left">
+              <div class="section-title-two">
+                <span>Expertise</span>
+                <h2>Our Services</h2>
+              </div>
+              <div class="speciality-item">
+                <div class="row m-0">
+                  <div
+                    class=" wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div class="speciality-inner">
+                      <i class="icofont-check-circled"></i>
+                      <h3>CLINICAL</h3>
+                      <p>
+                        1) Operated 100-bed hospital Shatashu Hospital at Malageon Beed from 2003-2018. <br>
+2) Rendered services in the capacity of consultant physician for 5 years at Dinanath Mangeshkar Multispeciality Hospital Pune. <br>
+3) Now leading the Department of Internal Medicine Manipal Hospital <br>
+4) Operated a Diabetic Club with more than 5000 Diabetic Patient members. <br>
+5) Asthama Club with more than 5000 Asthmatic Patient members.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=" wow fadeInUp"
+                    data-wow-delay=".5s"
+                  >
+                    <div class="speciality-inner">
+                      <i class="icofont-check-circled"></i>
+                      <h3>INTENSIVE CARE</h3>
+                      <p>
+                        1) Worked as a Lecturer at ICU SRTR Medical College, Ambejogai. <br>
+                        2) Operated 15 bedded ICU for 15 years Zero death  rate of toxicology cases.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=" wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div class="speciality-inner">
+                      <i class="icofont-check-circled"></i>
+                      <h3>PUBLIC HEALTH</h3>
+                      <p>
+                        1) Worked as a Medical officer at PHC Mendkey District Chandrapur in a remote area. <br>
+                        2) Worked as CEO of Shatayushi Foundation by operating mobile media units in Beed, Parbhani, Nanded, Hingoli, Raigad, Satara & Nandurbar districts. <br>
+                        3) Providing free door step services for 543 remote villages of Maharashtra since 2011. <br>
+                      </p>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 pr-0">
+            <div class="speciality-item speciality-right pt-5">
+              <img src="assets/img/doctor15.jpeg" alt="Speciality" />
+              <!-- <img src="assets/img/home-two/4.jpg" alt="Speciality" /> -->
+              <div class="speciality-emergency">
+                <div class="speciality-icon">
+                  <a href="tel:+91 7822816098">
+                    <i class="icofont-ui-call"></i
+                  ></a>
+                </div>
+                <h3>Emergency Call</h3>
+                <a href="tel:+91 7822816098"><p>+91 7822816098</p></a>
+              </div>
+            </div>
+            <div class="speciality-item speciality-right1 pt-">
+              <!-- <img src="assets/img/doctor13.jpeg" alt="Speciality" /> -->
+              <!-- <img src="assets/img/home-two/4.jpg" alt="Speciality" /> -->
+              <!-- <div class="speciality-emergency">
+                <div class="speciality-icon">
+                  <a href="tel:+91 7822816098">
+                    <i class="icofont-ui-call"></i
+                  ></a>
+                </div>
+                <h3>Emergency Call</h3>
+                <a href="tel:+91 7822816098"><p>+91 7822816098</p></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-area pb-701">
+      <div class="container">
+        <div class="section-title-two">
+          <span>Services</span>
+          <h2>Our Clinical services</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
+            <div class="service-item">
+              <div class="d-table">
+                <div class="d-table-cell">
+                  <div class="service-front">
+                    <i class="icofont-medical-sign"></i>
+                    <h3>Asthma & COPD</h3>
+                    <p>
+                      Specialized care and treatments for Asthma & COPD
+                      patients, improving breathing and quality of life with our
+                      expert doctors.
+                    </p>
+                  </div>
+                  <div class="service-end">
+                    <i class="icofont-medical-sign"></i>
+                    <h3>Asthma & COPD</h3>
+                    <p>
+                      Specialized care and treatments for Asthma & COPD
+                      patients, improving breathing and quality of life with our
+                      expert doctors.
+                    </p>
+                    <a href="./services.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".5s">
+            <div class="service-item">
+              <div class="d-table">
+                <div class="d-table-cell">
+                  <div class="service-front">
+                    <i class="icofont-prescription"></i>
+                    <h3>Diabetes</h3>
+                    <p>
+                      Expert diabetes management for a healthier life.
+                      Personalized care and support to control and thrive with
+                      diabetes.
+                    </p>
+                  </div>
+                  <div class="service-end">
+                    <i class="icofont-prescription"></i>
+                    <h3>Diabetes</h3>
+                    <p>
+                      Expert diabetes management for a healthier life.
+                      Personalized care and support to control and thrive with
+                      diabetes.
+                    </p>
+                    <a href="./services.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".7s">
+            <div class="service-item">
+              <div class="d-table">
+                <div class="d-table-cell">
+                  <div class="service-front">
+                    <i class="icofont-patient-file"></i>
+                    <h3>Behavioural Disorders</h3>
+                    <p>
+                      Compassionate care for behavioral disorders. Our team
+                      provides support and treatments to enhance mental
+                      well-being and recovery
+                    </p>
+                  </div>
+                  <div class="service-end">
+                    <i class="icofont-patient-file"></i>
+                    <h3>Behavioural Disorders</h3>
+                    <p>
+                      Compassionate care for behavioral disorders. Our team
+                      provides support and treatments to enhance mental
+                      well-being and recovery
+                    </p>
+                    <a href="./services.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".9s">
+            <div class="service-item">
+              <div class="d-table">
+                <div class="d-table-cell">
+                  <div class="service-front">
+                    <i class="icofont-doctor"></i>
+                    <h3>Hypertension</h3>
+                    <p>
+                      Effective hypertension management. Our medical experts
+                      work to control blood pressure and reduce associated risks
+                      for better health.
+                    </p>
+                  </div>
+                  <div class="service-end">
+                    <i class="icofont-doctor"></i>
+                    <h3>Hypertension</h3>
+                    <p>
+                      Effective hypertension management. Our medical experts
+                      work to control blood pressure and reduce associated risks
+                      for better health.
+                    </p>
+                    <a href="./services.html">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="common-btn1">
+            <a href="./services.html">Get Appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doctors-area pt-100">
+      <div class="container">
+        <div class="section-title-two">
+          <span>Doctor</span>
+          <h2>Meet Our Doctor</h2>
+        </div>
+        <div class="row justify-content-center gap-5">
+          <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+            <div class="doctor-item">
+              <div class="doctor-top">
+                <img src="assets/img/DrImg2.jpg" alt="Doctor" />
+                <a href="./contact.html">Get Appointment</a>
+              </div>
+              <div class="doctor-bottom">
+                <h3>
+                  <a href="./about.html">Dr. Prasad Biware</a>
+                </h3>
+                <span>MBBS | MD(Medicine) </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-6  wow fadeInUp" data-wow-delay=".3s">
+            <h1 class="head1 text-black" style="margin-top:-80px; margin-left:20px;">About Doctor</h1>
+            <p>
+             <ul>
+              <li>Dr. Prasad Biware is a well-known and reputed physician working in the field of Internal Medicine since 2003. He successfully established and operated a 100-bed Shatayushi Hospital with 10 bed ICU, the first well-equipped hospital to have provided modern-day health facilities to the people of Majalgaon taluka in Beed district.</li>
+              <li>Apart from just walk-in health facilities he also conducted helpful and unique initiatives like a monthly 'Diabetic Club' providing diabetic patients regular health care, and check-ups, with over 5,000 beneficiaries.</li>
+              <li>He has rendered his yeoman services in the capacity of consultant physician for 5 years at Deenanath Mangeshkar Super speciality Hospital, Pune.</li>
+              <li>He has been passionate about toxicology cases and has successfully treated over 1000 patients with poisoning, snake bites, and drowning with zero death rate.</li>
+              <li>
+                In a special collaboration with the Government of Maharashtra, he successfully operated 10 Mobile Medical Units under his supervision and guidance, providing free preventive, diagnostic, curative and referral services to poor and needy patients from 574 remote travels and underserved villages in Maharashtra since 2011.
+              </li>
+             </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="counter-area counter-area-two">
+      <div class="container">
+        <div class="row counter-bg justify-content-center">
+        
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="counter-item">
+              <i class="icofont-people"></i>
+              <h3>
+                <span class="odometer" data-count="2500">00</span>
+                <span class="target">+</span>
+              </h3>
+              <p>Happy Patients</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="counter-item">
+              <i class="icofont-camping-vest"></i>
+              <h3>
+                <span class="odometer" data-count="30">00</span>
+                <span class="target">+</span>
+              </h3>
+              <p>Total Camping</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="counter-item">
+              <i class="icofont-badge"></i>
+              <h3>
+                <span class="odometer" data-count="25 +">00</span>
+              </h3>
+              <p>Year Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<section class="appointment-area pb-100">
+      <div class="container-fluid p-0">
+        <div class="appointment-item">
+          <center><h2>Book your appointment</h2></center>
+          <br>
+          <div class="appointment-form">
+            <form id="myForm"
+            name="myForm">
+              <div class="row">
+                  <div class="form-group">
+                    <i class="icofont-business-man-alt-1"></i>
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      id="name" name="bookingname"  autocomplete="off"
+                      class="form-control"
+                      placeholder="Enter Your Name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <i class="icofont-ui-message"></i>
+                    <label>Email</label>
+                    <input
+                      type="email" id="email1" 
+                      name="bookingemail" class="form-control" autocomplete="off"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <i class="icofont-ui-call"></i>
+                    <label>Phone</label>
+                    <input
+                      type="text"
+                      id="phone" name="bookingphone" class="form-control" autocomplete="off"
+                      placeholder="Enter Your Number"
+                    />
+                  </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" id="submitBtn"  class="btn appointment-btn">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- validation for form  -->
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function(event) {
+                event.preventDefault();
+
+                var nameInput = document.getElementById("name");
+                var phoneInput = document.getElementById("phone");
+                var name = nameInput.value.trim();
+                var phone = phoneInput.value.trim();
+        if (name === "") {
+        alert("Please enter your name.");
+        nameInput.focus();
+        return;
+        }
+var phoneRegex = /^[6-9]\d{9}$/; 
+if (!phoneRegex.test(phone)) {
+alert("Please enter a valid 10-digit phone number starting with 6, 7, 8, or 9.");
+phoneInput.focus();
+return;
+}
+alert("Your form is Submit Successfully");
+document.getElementById("myForm").reset();
+});
+</script>
+</section>
+          <footer class="pb-50">
+                  <div class="newsletter-area">
+                    <div class="container">
+                    </div>
+                  </div>
+            
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="footer-item">
+                          <div class="footer-contact">
+                            <h3>Contact Us</h3>
+                            <ul>
+                              <li>
+                                <i class="icofont-ui-message" id="emailLink"></i>
+                                <a 
+                                href="mailto:drprasadbiware@gmail.com"
+                                  ><span
+                                    >drprasadbiware@gmail.com</span
+                                  ></a 
+                                >
+                              </li>
+            
+                              <li>
+                                <i class="icofont-stock-mobile"></i>
+                                <a href="tel:+91 7822816098"> Call : +91 7822816098 </a>
+                                <a href="tel:020 68138888"> Call : 020 68138888 </a>
+                              </li>
+                              <li>
+                                <i class="icofont-location-pin pt-4"></i> Care Clinic, Audhut
+                                Heights, Opposite <br />
+                                Santosh hall, Sinhagad road Pune 411051.
+                                <p class="pt-4">Survey No. 111/111, Mahalunge Road, Baner, Pune- 411045,</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-2">
+                        <div class="footer-item">
+                          <div class="footer-quick">
+                            <h3>Quick Links</h3>
+                            <ul>
+                              <li>
+                                <a href="about.html">About us</a>
+                              </li>
+                              <li>
+                                <a href="./services.html">Services</a>
+                              </li>
+                              <li>
+                                <a href="./blogs.html">Blogs</a>
+                              </li>
+                              <li>
+                                <a href="./gallery.html">Gallery</a>
+                              </li>
+                              <li>
+                                <a href="./contact.html">Contact us</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="footer-item">
+                          <div class="footer-feedback">
+                            <h3>Address</h3>
+                            <h6 class="text-black">Care Clinic, Sinhagad road</h6>
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1123942666195!2d73.8212953109537!3d18.478567470383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295f7593eb08f%3A0xe457be5956573954!2sCare%20clinic!5e0!3m2!1sen!2sin!4v1691407430221!5m2!1sen!2sin"
+                              width="300"
+                              height="220"
+                              style="border: 0"
+                              allowfullscreen=""
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                            
+                          
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="footer-item">
+                          <div class="footer-feedback">
+                            <h3>Address</h3>
+                            <h6 class="text-black">Manipal Hospital, Baner</h6>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1714726041723!2d73.76711417494371!3d18.56630656777606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf1f0cb3769f%3A0x649ba20bc78a6f16!2sManipal%20Hospitals%20Baner!5e0!3m2!1sen!2sin!4v1691732818324!5m2!1sen!2sin" 
+                            width="300"
+                              height="220"
+                              style="border: 0"
+                              allowfullscreen=""
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="assets/js/jquery.meanmenu.js"></script>
+
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="assets/js/form-validator.min.js"></script>
+
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

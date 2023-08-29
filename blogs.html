@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+
+    <link rel="stylesheet" href="assets/css/icofont.min.css" />
+
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="https://kit.fontawesome.com/8de71d6583.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/theme-dark.css" />
+    <title>Care Clinic</title>
+    <link rel="icon" type="image/png" href="assets/img/Logo-01.png" />
+  </head>
+  <style>
+    .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:20;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    filter: blur(5px); /* blur effect */
+    z-index: 9999;
+    display: none;
+    
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    overflow: hidden;
+  /* border-radius: 5px; */
+    z-index: 10000;
+    display: none;
+}
+.popup-content {
+width:"1px"
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+  </style>
+
+  <body>
+    <div class="header-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-9 col-lg-9">
+            <div class="header-top-item">
+              <div class="header-top-left">
+                <ul>
+                  <li>
+                    <a href="tel:+91 7822816098">
+                      <i class="icofont-ui-call"></i>
+                      Call : +91 7822816098
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                    href="mailto:drprasadbiware@gmail.com"
+                    >
+                      <i class="icofont-ui-message"></i>
+                      <span
+                        >drprasadbiware@gmail.com</span
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <i class="icofont-location-pin"></i> Care Clinic, Audhut
+                    Heights, Sinhagad road Pune .
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="header-top-item">
+              <div class="header-top-right">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=100095468146433" target="_blank">
+                      <i class="icofont-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/drprasadbiware/" target="_blank">
+                      <i class="icofont-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="whatsapp://send?phone=+917822816098&text=Hello%20from%20my%20website!" target="_blank">
+                      <i class="icofont-whatsapp"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-area sticky-top">
+      <div class="mobile-nav">
+        <a href="index.html" class="logo">
+          <img src="assets/img/Logo-02.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="main-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/Logo-02.png" alt="Logo" />
+            </a>
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blogs.html" class="nav-link">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+              </ul>
+              <div class="appointment">
+                <a href="#" id="open-popup-btns" class="btn btn-info" style="background-color: white;position: absolute;color: black; right: 40px;bottom:35px; font-weight: 500;filter:  drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));">Appointment</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!------------------------Appointment--------------------------------------->
+<div class="flex items-center gap-6">
+  <div>
+      <div id="popups" class="popup">
+        <div class="container-fluid p-0">
+          <div class="appointment-item">
+            <i id="close-popup-btns" class="fa-solid fa-x" style="position: absolute; top:10px; right: 15px; font-size: 20px; cursor: pointer;" id="myModal" class="close-popup"
+            ></i>
+            <center><h2 class="-mt-15">Book your appointment</h2></center>
+            <br>
+            <div class="appointment-form">
+              <form id="myForm"
+              id="bookingForm"
+              novalidate  method="POST" onsubmit="sendEmail()">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <i class="icofont-business-man-alt-1"></i>
+                      <label>Name</label>
+                      <input
+                        type="text"
+                        id="name" name="bookingname"  autocomplete="off"
+                        class="form-control"
+                        placeholder="Enter Your Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <i class="icofont-ui-message"></i>
+                      <label>Email</label>
+                      <input
+                        type="email"
+                        name="bookingemail" class="form-control" autocomplete="off"
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <i class="icofont-ui-call"></i>
+                      <label>Phone</label>
+                      <input
+                        type="text"
+                        id="phone" name="bookingphone" class="form-control" autocomplete="off"
+                        placeholder="Enter Your Number"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" id="submitBtn"  class="btn appointment-btn">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+          </div>
+          </div>
+      </div>
+  <div id="overlays" class="overlay w-full "></div>
+  <script>
+    const openPopupBtns = document.getElementById('open-popup-btns');
+    const closePopupBtns = document.getElementById('close-popup-btns');
+    const popups = document.getElementById('popups');
+    const overlays = document.getElementById('overlays');
+    openPopupBtns.addEventListener('click', () => {
+        popups.style.display = 'block';
+        overlays.style.display = 'block';
+    });
+    closePopupBtns.addEventListener('click', () => {
+        popups.style.display = 'none';
+        overlays.style.display = 'none';
+    });
+const closePopupButtons = document.querySelectorAll('.close-popup');
+const contactFormPopup = document.getElementById('contact-form-popup');
+closePopupButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        contactFormPopup.style.display = 'none'; 
+    });
+});
+contactFormPopup.addEventListener('click', (event) => {
+    if (event.target === contactFormPopup) {
+        contactFormPopup.style.display = 'none';
+    }
+});
+</script>
+<!----------------------------End---------------------------------------------->
+
+    <section class="blog-area pt-100 pb-70">
+      <div class="container">
+        <div class="section-title-two">
+          <span>Blogs</span>
+          <h2>Our latest blogs</h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+            <div class="blog-item">
+              <div class="blog-top">
+                <a href="blog-details.html">
+                  <img src="assets/img/home-one/11.jpg" alt="Blog" />
+                </a>
+              </div>
+              <div class="blog-bottom">
+                <h3>
+                  <a href="blog-details.html"
+                    >In this hospital there are special surgeon.</a
+                  >
+                </h3>
+                <p>
+                  Special surgeons are often doctors who have undergone
+                  additional training and education to develop expertise in
+                  specific medical fields or surgical procedures. These
+                  specialists are highly skilled and knowledgeable, allowing
+                  them.
+                </p>
+                <ul>
+                  <li>
+                    <a href="blog-details.html">
+                      Read More
+                      <i class="icofont-long-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li><i class="icofont-calendar"></i> June 03, 2022</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
+            <div class="blog-item">
+              <div class="blog-top">
+                <a href="blog-details.html">
+                  <img src="assets/img/home-one/12.jpg" alt="Blog" />
+                </a>
+              </div>
+              <div class="blog-bottom">
+                <h3>
+                  <a href="blog-details.html"
+                    >World AIDS Day, designated on 1 December.</a
+                  >
+                </h3>
+                <p>
+                  World AIDS Day is an important global health observance held
+                  on December 1st each year. It is dedicated to raising
+                  awareness of the HIV/AIDS pandemic and remembering those who
+                  have lost their lives to the disease.
+                </p>
+                <ul>
+                  <li>
+                    <a href="blog-details.html">
+                      Read More
+                      <i class="icofont-long-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li><i class="icofont-calendar"></i> Oct 09, 2022</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4 wow fadeInUp"
+            data-wow-delay=".7s"
+          >
+            <div class="blog-item">
+              <div class="blog-top">
+                <a href="blog-details.html">
+                  <img src="assets/img/home-one/13.jpg" alt="Blog" />
+                </a>
+              </div>
+              <div class="blog-bottom">
+                <h3>
+                  <a href="blog-details.html"
+                    >More than 80 clinical trials launch to test coronavirus.</a
+                  >
+                </h3>
+                <p>
+                  As of my last update in September 2021, there were indeed more
+                  than 80 clinical trials launched worldwide to test various
+                  treatments and vaccines for COVID-19, the disease caused by
+                  the coronavirus SARS-CoV-2.
+                </p>
+                <ul>
+                  <li>
+                    <a href="blog-details.html">
+                      Read More
+                      <i class="icofont-long-arrow-right"></i>
+                    </a>
+                  </li>
+                  <li><i class="icofont-calendar"></i> Jan 03, 2023</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="speciality-area pb-100">
+      <div class="container-fluid p-0">
+        <div class="row m-0">
+          <div class="col-lg-7">
+            <div class="speciality-left">
+              <div class="section-title-two">
+                <span>Speciality</span>
+                <h2>Our Services</h2>
+              </div>
+              <div class="speciality-item">
+                <div class="row m-0">
+                  <div
+                    class=" wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div class="speciality-inner">
+                      <i class="icofont-check-circled"></i>
+                      <h3>CLINICAL</h3>
+                      <p>
+                        1) Operated 100-bed hospital Shatashu Hospital at Malageon Beed from 2003-2018. <br>
+2) Rendered services in the capacity of consultant physician for 5 years at Dinanath Mangeshkar Multispeciality Hospital Pune. <br>
+3) Now leading the Department of Internal Medicine Manipal Hospital <br>
+4) Operated a Diabetic Club with more than 5000 Diabetic Patient members. <br>
+5) Asthama Club with more than 5000 Asthmatic Patient members.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=" wow fadeInUp"
+                    data-wow-delay=".5s"
+                  >
+                    <div class="speciality-inner">
+                      <i class="icofont-check-circled"></i>
+                      <h3>INTENSIVE CARE</h3>
+                      <p>
+                        1) Worked as a Lecturer at ICU SRTR Medical College, Ambejogai. <br>
+                        2) Operated 15 bedded ICU for 15 years Zero death  rate of toxicology cases.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class=" wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div class="speciality-inner">
+                      <i class="icofont-check-circled"></i>
+                      <h3>PUBLIC HEALTH</h3>
+                      <p>
+                        1) Worked as a Medical officer at PHC Mendkey District Chandrapur in a remote area. <br>
+                        2) Worked as CEO of Shatayushi Foundation by operating mobile media units in Beed, Parbhani, Nanded, Hingoli, Raigad, Satara & Nandurbar districts. <br>
+                        3) Providing free door step services for 543 remote villages of Maharashtra since 2011. <br>
+                      </p>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 pr-0">
+            <div class="speciality-item speciality-right pt-5">
+              <img src="assets/img/doctor15.jpeg" alt="Speciality" />
+              <!-- <img src="assets/img/home-two/4.jpg" alt="Speciality" /> -->
+              <div class="speciality-emergency">
+                <div class="speciality-icon">
+                  <a href="tel:+91 7822816098">
+                    <i class="icofont-ui-call"></i
+                  ></a>
+                </div>
+                <h3>Emergency Call</h3>
+                <a href="tel:+91 7822816098"><p>+91 7822816098</p></a>
+              </div>
+            </div>
+            <div class="speciality-item speciality-right1 pt-">
+              <!-- <img src="assets/img/doctor13.jpeg" alt="Speciality" /> -->
+              <!-- <img src="assets/img/home-two/4.jpg" alt="Speciality" /> -->
+              <!-- <div class="speciality-emergency">
+                <div class="speciality-icon">
+                  <a href="tel:+91 7822816098">
+                    <i class="icofont-ui-call"></i
+                  ></a>
+                </div>
+                <h3>Emergency Call</h3>
+                <a href="tel:+91 7822816098"><p>+91 7822816098</p></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+
+    <footer class="pb-70">
+      <div class="newsletter-area">
+        <div class="container">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-lg-4">
+            <div class="footer-item">
+              <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                  <li>
+                    <i class="icofont-ui-message" id="emailLink"></i>
+                    <a 
+                    href="mailto:drprasadbiware@gmail.com"
+                      ><span
+                        >drprasadbiware@gmail.com</span
+                      ></a 
+                    >
+                  </li>
+
+                  <li>
+                    <i class="icofont-stock-mobile"></i>
+                    <a href="tel:+91 7822816098"> Call : +91 7822816098 </a>
+                    <a href="tel:020 68138888"> Call : 020 68138888 </a>
+                  </li>
+                  <li>
+                    <i class="icofont-location-pin pt-4"></i> Care Clinic, Audhut
+                    Heights, Opposite <br />
+                    Santosh hall, Sinhagad road Pune 411051.
+                    <p class="pt-4">Survey No. 111/111, Mahalunge Road, Baner, Pune- 411045,</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="footer-item">
+              <div class="footer-quick">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li>
+                    <a href="about.html">About us</a>
+                  </li>
+                  <li>
+                    <a href="./services.html">Services</a>
+                  </li>
+                  <li>
+                    <a href="./blogs.html">Blogs</a>
+                  </li>
+                  <li>
+                    <a href="./healthPackages.html">Health Packages</a>
+                  </li>
+                  <li>
+                    <a href="./contact.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-item">
+              <div class="footer-feedback">
+                <h3>Address</h3>
+                <h6 class="text-black">Care Clinic</h6>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1123942666195!2d73.8212953109537!3d18.478567470383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295f7593eb08f%3A0xe457be5956573954!2sCare%20clinic!5e0!3m2!1sen!2sin!4v1691407430221!5m2!1sen!2sin"
+                  width="300"
+                  height="220"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-item">
+              <div class="footer-feedback">
+                <h3>Address</h3>
+                <h6 class="text-black">Manipal Hospital</h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1714726041723!2d73.76711417494371!3d18.56630656777606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf1f0cb3769f%3A0x649ba20bc78a6f16!2sManipal%20Hospitals%20Baner!5e0!3m2!1sen!2sin!4v1691732818324!5m2!1sen!2sin" 
+                width="300"
+                  height="220"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="assets/js/jquery.meanmenu.js"></script>
+
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="assets/js/form-validator.min.js"></script>
+
+    <script src="assets/js/contact-form-script.js"></script>
+
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
