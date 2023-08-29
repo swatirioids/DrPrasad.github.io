@@ -32,14 +32,14 @@
     <link rel="icon" type="image/png" href="assets/img/Logo-02.png" />
   </head>
   <style>
-    .overlay {
+   .overlay {
     position: fixed;
     top: 0;
     left: 0;
     right:20;
     overflow: hidden;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
     filter: blur(5px); /* blur effect */
     z-index: 9999;
@@ -54,10 +54,9 @@
     background-color: #fff;
     padding: 20px;
     overflow: hidden;
-    border-radius: 50px;
+  /* border-radius: 5px; */
     z-index: 10000;
     display: none;
-    width: 50rem;
 }
 .popup-content {
 width:"1px"
@@ -192,6 +191,7 @@ width:"1px"
               id="bookingForm"
               novalidate  method="POST" onsubmit="sendEmail()">
                 <div class="row">
+                  <div class="col-lg-6">
                     <div class="form-group">
                       <i class="icofont-business-man-alt-1"></i>
                       <label>Name</label>
@@ -202,6 +202,8 @@ width:"1px"
                         placeholder="Enter Your Name"
                       />
                     </div>
+                  </div>
+                  <div class="col-lg-6">
                     <div class="form-group">
                       <i class="icofont-ui-message"></i>
                       <label>Email</label>
@@ -211,6 +213,8 @@ width:"1px"
                         placeholder="Enter Your Email"
                       />
                     </div>
+                  </div>
+                  <div class="col-lg-6">
                     <div class="form-group">
                       <i class="icofont-ui-call"></i>
                       <label>Phone</label>
@@ -220,6 +224,7 @@ width:"1px"
                         placeholder="Enter Your Number"
                       />
                     </div>
+                  </div>
                 </div>
                 <div class="text-center">
                   <button type="submit" id="submitBtn"  class="btn appointment-btn">
@@ -296,12 +301,9 @@ document.getElementById("myForm").reset();
                   <img src="assets/img/home-one/5.png" alt="Shape" />
                 </div>
                 <h1 class="head1 text-black">
-                  Your Health Hub: Comprehensive Care Under One Roof
-                </h1>
+                  From Care to Cure: A Comprehensive healthcare Unit  </h1>
                 <p>
-                  Your one-stop destination for multi-specialty healthcare
-                  services. Our expert doctors are here to provide comprehensive
-                  care and support for all your medical needs.
+                  Your one-stop destination for multi-specialist healthcare services. Our Expert doctors are here to provide comprehensive care and support for all your medical needs. 
                 </p>
                 <div class="common-btn">
                   <a href="./contact.html">Get Appointment</a>
@@ -375,7 +377,7 @@ document.getElementById("myForm").reset();
             <div class="welcome-item welcome-right">
               <div class="section-title-two">
                 <span>About Us</span>
-                <h2 style="margin-left: 10px; font-family:Georgia, 'Times New Roman', Times, serif ; font-size:34px;">Welcome to our Clinical Care</h2>
+                <h2 style="font-family:Georgia, 'Times New Roman', Times, serif; font-size:34px;">Welcome to our Clinical Care</h2>
               </div>
               <p style="margin-top: -30px; text-align: justify; text-justify: inter-word">
                 Care Clinic is a well-known and reputed physician working in the field of Internal 
@@ -613,7 +615,7 @@ document.getElementById("myForm").reset();
         </div>
         <div class="row justify-content-center gap-5">
           <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-            <div class="doctor-item">
+            <div class="doctor-item" style="margin-left: -90px;">
               <div class="doctor-top">
                 <img src="assets/img/DrImg2.jpg" alt="Doctor" />
                 <a href="./contact.html">Get Appointment</a>
@@ -820,7 +822,7 @@ document.getElementById("myForm").reset();
                         <div class="footer-item">
                           <div class="footer-feedback">
                             <h3>Address</h3>
-                            <h6 class="text-black">Care Clinic, Sinhagad road</h6>
+                            <h6 class="text-white">Care Clinic, Sinhagad road</h6>
                             <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1123942666195!2d73.8212953109537!3d18.478567470383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295f7593eb08f%3A0xe457be5956573954!2sCare%20clinic!5e0!3m2!1sen!2sin!4v1691407430221!5m2!1sen!2sin"
                               width="300"
@@ -839,7 +841,7 @@ document.getElementById("myForm").reset();
                         <div class="footer-item">
                           <div class="footer-feedback">
                             <h3>Address</h3>
-                            <h6 class="text-black">Manipal Hospital, Baner</h6>
+                            <h6 class="text-white">Manipal Hospital, Baner</h6>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1714726041723!2d73.76711417494371!3d18.56630656777606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf1f0cb3769f%3A0x649ba20bc78a6f16!2sManipal%20Hospitals%20Baner!5e0!3m2!1sen!2sin!4v1691732818324!5m2!1sen!2sin" 
                             width="300"
                               height="220"
