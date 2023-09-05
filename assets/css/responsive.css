@@ -323,13 +323,22 @@
         border-bottom: 1px solid #4d93e959;
         border-top: 2px solid transparent
     }
+    .doctor-item {
+        padding-left: 10px;
+        width: 24rem;
+        border-radius: 40px;
+    }
+    .abt{
+        margin-top: 20px;
+    }
+    
     .doctor-item .doctor-top a {
         font-size: 14px;
         padding: 12px 0
     }
     .doctor-item .doctor-bottom {
         padding-top: 18px;
-        padding-bottom: 18px
+        padding-bottom: 18px;
     }
     .doctor-item .doctor-bottom h3 {
         font-size: 18px;
@@ -530,8 +539,9 @@
         margin-bottom: 8px
     }
     .welcome-right {
-        padding-left: 10px;
-        padding-top: -30px;
+        padding-left: 35px;
+        margin-top: -80px;
+        text-align: justify;
     }
     .section-title-two {
         margin-bottom: 30px;
@@ -562,13 +572,22 @@
     }
     .speciality-right {
         height: auto;
-        background-image: unset
+        background-image: unset;
     }
     .speciality-right:before {
         display: none
     }
     .speciality-right img {
-        display: inline-block
+        display: inline-block;
+        margin-left: 24px;
+        margin-top: -20px;
+        border-radius: 20px;
+    }
+
+    .speciality-right1 img {
+        display: inline-block;
+        margin-left: 24px;
+        margin-top: -20px;
     }
     .speciality-right .speciality-emergency {
         left: 15px;
@@ -1625,11 +1644,12 @@
         height: 4px
     }
     .service-item .service-front h3 {
-        font-size: 20px
+        font-size: 20px;
     }
     .service-item .service-end h3 {
         font-size: 20px
     }
+    
     .expertise-item .expertise-inner {
         padding-top: 36px;
         padding-bottom: 26px
@@ -1890,11 +1910,12 @@
         display: inline-block
     }
     .welcome-right {
-        padding-left: 25px;
-        padding-top: 0
+        padding-left: 33px;
+        padding-top:-20px;
     }
+
     .section-title-two {
-        max-width: 100%
+        max-width: 100%;
     }
     .section-title-two span {
         font-size: 15px

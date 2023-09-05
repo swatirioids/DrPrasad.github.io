@@ -1185,7 +1185,8 @@ button:focus {
     text-align: center;
     -webkit-box-shadow: 0 0 20px 0 #ddd;
     box-shadow: 0 0 20px 0 #ddd;
-    border-radius: 10px
+    border-radius: 10px;
+    margin-left: 5px;
 }
 
 .doctor-item:hover .doctor-top:before {
@@ -2031,6 +2032,21 @@ footer {
     position: relative;
     width: 85%;
     height: 50%
+}
+@media only screen and (max-width:767px) {
+    .speciality-right1 {
+        background-image: url(../img/doctor13.jpeg);
+        /* background-image: url(../img/FemaleDoctor.jpg); */
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* border-radius: 20px; */
+        margin-top: 20px;
+        position: relative;
+        width: 85%;
+        height: 50%;
+        margin-left: 24px;
+    }
 }
 .speciality-right3 {
     background-image: url(../img/doctor13.jpeg);
