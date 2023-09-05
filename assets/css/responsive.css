@@ -494,10 +494,14 @@
     .welcome-left {
         height: auto;
         background-image: unset;
-        margin-left: 8px;
+        margin-left: 33px;
     }
     .welcome-left img {
-        display: inline-block
+        display: inline-block;
+        margin-top: -400px;
+        height: 15rem;
+        z-index: 40;
+        opacity: 0.25;
     }
     .welcome-item ul {
         max-width: 100%
@@ -512,22 +516,22 @@
     .welcome-item ul li i {
         top: 0;
         font-size: 30px;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         line-height: 60px;
         -webkit-box-shadow: 0 0 0 6px #0046c0;
-        box-shadow: 0 0 0 6px #0046c0
+        box-shadow: 0 0 0 6px #0046c0;
     }
     .welcome-item ul li .welcome-inner {
         padding-left: 75px
     }
     .welcome-item ul li .welcome-inner h3 {
-        font-size: 18px;
+        font-size: 12px;
         margin-bottom: 8px
     }
     .welcome-right {
-        padding-left: 20px;
-        padding-top: 0
+        padding-left: 10px;
+        padding-top: -30px;
     }
     .section-title-two {
         margin-bottom: 30px;
@@ -645,7 +649,7 @@
     }
     .banner-item .common-btn-two a {
         font-size: 14px;
-        padding: 14px 15px;
+        padding: 30px 20px;
         margin-right: 8px
     }
     .banner-item .common-btn-two .cmn-btn-right-two {
@@ -1837,7 +1841,7 @@
         background-color: #0046c0
     }
     .emergency-area {
-        margin-top: 70px
+        margin-top: -300px;
     }
     .emergency-bg {
         padding: 40px 0 10px 50px
