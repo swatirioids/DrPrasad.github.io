@@ -29,19 +29,19 @@
         height: 18rem;
         border: 1px solid #fff;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin-left: 37px;
+        margin-left: 3px;
     }
     .abtfooter{
-        margin-top: 210px;
+        margin-top: 250px;
     }
     .blogfooter{
-        margin-top: 250px;
+        margin-top: 290px;
     }
     .bloggallary{
-        margin-top: 250px;
+        margin-top: 290px;
     }
     .conheading{
-        margin-top: 30px;
+        margin-top: 40px;
     }
     
     .pb-100 {
@@ -2919,4 +2919,8 @@
 
 .class3{
     display: grid;
+}
+
+.class4{
+    margin-top: 3rem;
 }
