@@ -1670,6 +1670,67 @@ footer {
     background-color: #111
 }
 
+.footer-item .footer-feedback1 h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 30px
+}
+
+.footer-item .footer-feedback1 .form-group {
+    margin-bottom: 20px
+}
+
+.footer-item .footer-feedback1 .form-group .form-control {
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #ffffffc7;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+    color: #fff
+}
+
+.footer-item .footer-feedback1 .form-group .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ffffffc7
+}
+
+.footer-item .footer-feedback1 .form-group ::-webkit-input-placeholder {
+    color: #ffffffc7
+}
+
+.footer-item .footer-feedback1 .form-group :-ms-input-placeholder {
+    color: #ffffffc7
+}
+
+.footer-item .footer-feedback1 .form-group ::-ms-input-placeholder {
+    color: #ffffffc7
+}
+
+.footer-item .footer-feedback1 .form-group ::placeholder {
+    color: #ffffffc7
+}
+
+.footer-item .footer-feedback1 .feedback-btn {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    color: #0046c0;
+    -webkit-transition: .5s all ease;
+    transition: .5s all ease
+}
+
+.footer-item .footer-feedback1 .feedback-btn:hover {
+    color: #fff;
+    background-color: #111
+}
+
 .copyright-area {
     background-color: #001230
 }

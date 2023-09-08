@@ -20,9 +20,29 @@
     .pb-701 {
         padding-bottom: 20px;
         padding-top: 20rem;
-
     }
-
+    .row {
+        display: grid;
+    }
+    .service-item{
+        width: 18rem;
+        height: 18rem;
+        border: 1px solid #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .abtfooter{
+        margin-top: 210px;
+    }
+    .blogfooter{
+        margin-top: 250px;
+    }
+    .bloggallary{
+        margin-top: 250px;
+    }
+    .conheading{
+        margin-top: 30px;
+    }
+    
     .pb-100 {
         padding-bottom: 50px
     }
@@ -460,12 +480,45 @@
     }
     .footer-item .footer-feedback h3 {
         font-size: 18px;
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        margin-top: -10px;
+        margin-left: -130px;
+    }
+    .heading{
+        margin-left: -2px;
+        width:10rem;
+        font-weight:900;
+    }
+    .Address{
+        margin-left: -3px;
+    }
+    .heading1{
+        margin-left: -2px;
+        margin-top: -24rem;
+        width: 10rem;
+        font-weight:900;
+    }
+    .Address1{
+        margin-left: -3px;
+        margin-top: 6px;
     }
     .footer-item .footer-feedback .form-group .form-control {
         font-size: 14px
     }
     .footer-item .footer-feedback .feedback-btn {
+        font-size: 13px;
+        padding: 10px 32px
+    }
+    .footer-item .footer-feedback1 h3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-top:350px;
+        margin-left: -155px;
+    }
+    .footer-item .footer-feedback1 .form-group .form-control {
+        font-size: 14px
+    }
+    .footer-item .footer-feedback1 .feedback-btn {
         font-size: 13px;
         padding: 10px 32px
     }
@@ -509,8 +562,8 @@
         display: inline-block;
         margin-top: -400px;
         height: 15rem;
-        z-index: 40;
-        opacity: 0.25;
+        /* z-index: 40;
+        opacity: 0.90; */
     }
     .welcome-item ul {
         max-width: 100%
@@ -1642,6 +1695,12 @@
     .section-title h2:before {
         width: 70px;
         height: 4px
+    }
+    .service-item{
+        height: 10rem;
+        width:20rem;
+        border: 1px solid #111;
+        display: grid;
     }
     .service-item .service-front h3 {
         font-size: 20px;
