@@ -29,6 +29,7 @@
         height: 18rem;
         border: 1px solid #fff;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-left: 12px;
     }
     .abtfooter{
         margin-top: 210px;
@@ -353,7 +354,7 @@
         margin-top: 20px;
     }
     .class{
-        margin-left: 90px;
+        margin-left: 140px;
     }
     
     .doctor-item .doctor-top a {
@@ -2913,7 +2914,7 @@
  /* extaa */
 
  .class1{
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 .class3{
