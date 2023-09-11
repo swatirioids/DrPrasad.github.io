@@ -2089,12 +2089,27 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 20px;
-     margin-top: 20px;
+    margin-top: 20px;
     position: relative;
     width: 85%;
     height: 50%
 }
 @media only screen and (max-width:767px) {
+    .speciality-right1 {
+        background-image: url(../img/doctor13.jpeg);
+        /* background-image: url(../img/FemaleDoctor.jpg); */
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* border-radius: 20px; */
+        margin-top: 20px;
+        position: relative;
+        width: 85%;
+        height: 68%;
+        margin-left: 24px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
     .speciality-right1 {
         background-image: url(../img/doctor13.jpeg);
         /* background-image: url(../img/FemaleDoctor.jpg); */
@@ -5051,6 +5066,8 @@ footer {
     background-color: #94be5d
 }
 }
+
+
 
 
 

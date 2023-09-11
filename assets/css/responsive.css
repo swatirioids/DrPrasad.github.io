@@ -1524,6 +1524,9 @@
         margin-left: auto;
         margin-right: auto
     }
+    .conheading{
+        margin-top: 50px;
+    }
     .slider-item .slider-shape img {
         position: relative;
         top: 0;
@@ -1703,11 +1706,12 @@
         height: 4px
     }
     .service-item{
-        height: 10rem;
+        height: 20rem;
         width:20rem;
-        border: 1px solid #111;
         display: grid;
         margin-left: 9px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-top: 20px;
     }
     .service-item .service-front h3 {
         font-size: 20px;
@@ -1787,6 +1791,17 @@
         font-size: 15px;
         padding: 14px 0
     }
+    .abt{
+        /* margin-left:-100px; */
+        margin-top: 20px;
+    }
+    .abt1{
+        margin-left: -200px;
+    }
+    .class{
+        margin-left: 130px;
+    }
+    
     .doctor-item .doctor-bottom {
         padding-top: 20px;
         padding-bottom: 20px
@@ -1970,13 +1985,15 @@
     }
     .welcome-left {
         height: auto;
-        background-image: unset
+        background-image: unset;
+        margin-left: 78px;
     }
     .welcome-left img {
-        display: inline-block
+        display: inline-block;
+        margin-top: -20rem;
     }
     .welcome-right {
-        padding-left: 33px;
+        padding-left: 80px;
         padding-top:-20px;
     }
 
@@ -2007,10 +2024,25 @@
     }
     .speciality-right {
         height: auto;
-        background-image: unset
+        background-image: unset;
     }
     .speciality-right img {
-        display: inline-block
+        display: inline-block;
+        width: 60rem;
+        height: 30rem;
+        margin-left: 53px;
+        border-radius: 20px;
+    }
+    .speciality-right1 {
+        height: auto;
+        background-image: unset;
+    }
+    .speciality-right1 img{
+        display: inline-block;
+        width: 60rem;
+        height: 30rem;
+        border-radius: 20px;
+        margin-left:60px;
     }
     .speciality-right .speciality-emergency {
         left: 15px;
@@ -2051,7 +2083,8 @@
     }
     .appointment-item h2 {
         font-size: 20px;
-        margin-bottom: 12px
+        margin-bottom: 12px;
+        margin-top: -150px;
     }
     .appointment-item span {
         font-size: 15px
@@ -2924,3 +2957,4 @@
 .class4{
     margin-top: 3rem;
 }
+
