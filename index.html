@@ -95,10 +95,10 @@ width:"1px"
                       >
                     </a>
                   </li>
-                  <li>
+                  <!-- <li>
                   <a href="https://goo.gl/maps/xPGp4inTXmJ9XrNW9"><i class="icofont-location-pin"></i> Care Clinic, Audhut
                     Heights, Sinhagad road Pune .</a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -339,9 +339,9 @@ document.getElementById("myForm").reset();
               <div class="emergency-inner">
                 <h3>Location</h3>
                 <p>
-                  <a href="https://goo.gl/maps/xPGp4inTXmJ9XrNW9" target="_blank" style="color: #fff;"><big><strong>Care Clinic:</big></strong> Audhut Heights, Opposite Santosh hall, Sinhagad
-                  road, Pune 411051. <br> <br></a>
-                <a href="https://goo.gl/maps/qr7NzYpdiXHfVQBt6" target="_blank" style="color: #fff;"><big><strong>Manipal Hospital :</strong></big>   Survey No. 111/111, Mahalunge Road, Baner, Pune- 411045.</a>
+                  <a href="https://goo.gl/maps/qr7NzYpdiXHfVQBt6" target="_blank" style="color: #fff;"><big><strong>Manipal Hospital :</strong></big>   Survey No. 111/111, Mahalunge Road, Baner, Pune- 411045.</a>
+                  <a href="https://goo.gl/maps/xPGp4inTXmJ9XrNW9" target="_blank" style="color: #fff;"><big><strong>Care Clinic:</big></strong> Avdhoot Heights, Opp. Santosh Hall,
+                  Sinhagad Road, Suncity Road Corner, Pune<br> <br></a>
                 </p>
               </div>
             </div>
@@ -352,11 +352,11 @@ document.getElementById("myForm").reset();
               <div class="emergency-inner">
                 <h3>Opening timing</h3>
                 <p>
-                <strong><big> Care Clinic:<br></big></strong> 
-                  Tue/Thu/Sat - 1 pm - 3 pm <br>
-                <strong><big>Manipal Hospitals: </big></strong> Baner  <br>
-                All Days: 9am-1pm & 5pm-8pm <br>
-                On Mon & Fri:9am-11am & 2pm-4 pm                </p>
+              <strong><big>Manipal Hospitals: </big></strong><br>
+                <strong>All Days:</strong> 9am-1pm & 5pm-8pm <br>
+                <strong>On Days:</strong> 9am-11am & 2pm-4pm</p>
+               <p> <strong><big> Care Clinic:<br></big></strong> 
+                <strong>Tue/Thu/Sat:</strong> 1 pm - 3 pm <br></p>
               </div>
             </div>
           </div>
@@ -384,9 +384,7 @@ document.getElementById("myForm").reset();
                 </h2>
               </div>
               <p style="margin-top: -30px; text-align: justify; text-justify: inter-word">
-                Welcome to the official website of Dr. Prasad Biware, a distinguished physician with an unwavering commitment to providing exceptional healthcare services. With a career spanning over two decades, Dr. Biware has established himself as a leading expert in Internal Medicine, earning the trust and admiration of countless patients.Dr. Prasad Biware embarked on his journey in the field of Internal Medicine in 2003. His dedication and vision led him to establish the renowned Shatayushi Hospital in Majalgaon taluka, Beed district. This 100-bed hospital, equipped with a state-of-the-art 10-bed ICU, revolutionized healthcare in the region by offering modern-day facilities previously inaccessible to the local community.
-
-              </p>
+                Welcome to the official website of Dr. Prasad Biware, a distinguished physician with an unwavering commitment to providing exceptional healthcare services. With a career spanning over two decades, Dr. Biware has established himself as a leading expert in Internal Medicine, earning the trust and admiration of countless patients.Dr. Prasad Biware embarked on his journey in the field of Internal Medicine in 2003. His dedication and vision led him to establish the renowned Shatayushi Hospital in Majalgaon taluka, Beed district. This 100-bed hospital, equipped with a state-of-the-art 10-bed ICU, revolutionized healthcare in the region by offering modern-day facilities previously inaccessible to the local community.</p>
             </div>
           </div>
         </div>
@@ -734,6 +732,12 @@ document.getElementById("myForm").reset();
                   Submit
                 </button>
               </div>
+              <div id="success-popup" class="popup">
+                <div class="popup-content">
+                <p style="color: black;">Form submitted successfully!</p>
+                <button id="close-popup">Close</button>
+            </div>
+            </div>
             </form>
           </div>
         </div>
@@ -753,12 +757,12 @@ document.getElementById("myForm").reset();
         nameInput.focus();
         return;
         }
-var phoneRegex = /^[6-9]\d{9}$/; 
-if (!phoneRegex.test(phone)) {
-alert("Please enter a valid 10-digit phone number starting with 6, 7, 8, or 9.");
-phoneInput.focus();
-return;
-}
+        var phoneRegex = /^[6-9]\d{9}$/; 
+        if (!phoneRegex.test(phone)) {
+        alert("Please enter a valid 10-digit phone number starting with 6, 7, 8, or 9.");
+        phoneInput.focus();
+        return;
+        }
 alert("Your form is Submit Successfully");
 document.getElementById("myForm").reset();
 });
@@ -786,17 +790,15 @@ document.getElementById("myForm").reset();
                                   ></a 
                                 >
                               </li>
-            
                               <li>
                                 <i class="icofont-stock-mobile"></i>
                                 <a href="tel:+91 7822816098"><strong>Call:</strong> +917822816098 </a>
                                 <a href="tel:020 68138888"><strong>Call:</strong> 02068138888 </a>
                               </li>
                               <li>
-                                <i class="icofont-location-pin pt-4"></i><strong>Care Clinic:</strong> Audhut
-                                Heights, Opposite <br />
-                                Santosh hall, Sinhagad road Pune 411051.
-                                <p class="pt-1"><strong>Manipal Hospital:</strong>Survey No. 111/111, Mahalunge Road, Baner, Pune- 411045,</p>
+                                <i class="icofont-location-pin pt-0"></i><strong>Manipal Hospital:</strong>Survey No. 111/111, Mahalunge Road, Baner, Pune- 411045,
+                                <p class="pt-1"><strong>Care Clinic:</strong>Avdhoot Heights, Opp. Santosh Hall,
+                                  Sinhagad Road, Suncity Road Corner, Pune</p>
                               </li>
                             </ul>
                           </div>
@@ -857,7 +859,6 @@ document.getElementById("myForm").reset();
                               allowfullscreen=""
                               loading="lazy"
                               referrerpolicy="no-referrer-when-downgrade"></iframe>
-                          
                           </div>
                         </div>
                       </div>
@@ -865,8 +866,10 @@ document.getElementById("myForm").reset();
                   </div>
                 </footer>
 
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <script src="assets/js/owl.carousel.min.js"></script>
 
